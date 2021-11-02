@@ -225,7 +225,7 @@ TiDB 在遥测中新增收集 <列出本次新增遥测内容>。
     - 允许 Evict Leader 调度器调度拥有不健康副本的 Region [#4093](https://github.com/tikv/pd/issues/4093)
     - 优化调度器退出的速度 [#4146](https://github.com/tikv/pd/issues/4146)
 
-  TiFlash
++ TiFlash
     - 列存底层文件读模式优化：增强了分布式节点间 region 调度算法，减少读文件开销，降低远端数据读取的开销，以及其他代码效率改善。
     - 重构了 PageStorage 模块的实现：改进了内存控制和使用，减轻了写放大，增强了长时间较重读写负载下的稳定性。
     - 改进了 TiFlash 重启时的稳定性和可用性，减少了重启结束后短时间内查询可能失败的情况。
