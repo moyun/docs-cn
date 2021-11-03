@@ -313,11 +313,11 @@ TiDB 在遥测中新增收集 <列出本次新增遥测内容>。
     - 阻止 wait index 无限等待，防止写入压力较重时 TiFlash 长时间等待数据同步而无法提供服务的问题。默认超时为5分钟。
     - 解决了当日志体量很大时，用户搜索日志很慢或搜索不出的问题
     - 解决了搜索比较久远的历史日志时，只能搜索出最近的一部分日志的问题
-    - 修复在打开 new collation 的情况下可能出现的结果错误
-    - 修复 SQL 语句中含有极长嵌套表达式时可能出现的解析错误
-    - 修复 Exchange 算子中可能出现的 `Block schema mismatch` 错误
-    - 修复 Decimal 类型比较时可能出现的 `Can't compare` 错误
-    - 修复 `left/substring` 函数中的 `3rd arguments of function substringUTF8 must be constants` 错误
+    - 修复在打开 new collation 的情况下可能出现的结果错误 <!-- https://github.com/pingcap/tics/pull/2808 -->
+    - 修复 SQL 语句中含有极长嵌套表达式时可能出现的解析错误 <!-- https://github.com/pingcap/tics/pull/3334 -->
+    - 修复 Exchange 算子中可能出现的 `Block schema mismatch` 错误 <!-- https://github.com/pingcap/tics/pull/3283 -->
+    - 修复 Decimal 类型比较时可能出现的 `Can't compare` 错误 <!-- https://github.com/pingcap/tics/pull/3097 -->
+    - 修复 `left/substring` 函数中的 `3rd arguments of function substringUTF8 must be constants` 错误 <!-- https://github.com/pingcap/tics/pull/3259 -->
 
 + Tools
 
